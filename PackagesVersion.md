@@ -1,4 +1,4 @@
-Wed Aug 23 04:53:43 UTC 2023
+Wed Aug 23 06:39:57 UTC 2023
 # R packages version
 ```
 
@@ -85,6 +85,7 @@ psutil==5.9.5
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
+pyfastx==1.1.0
 Pygments==2.16.1
 pysam==0.21.0
 python-dateutil==2.8.2
