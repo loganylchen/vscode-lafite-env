@@ -2,8 +2,6 @@ FROM python:3.11.4
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PATH=/opt/bin:$PATH
 
-
-ADD install_packages_R.R /tmp/
 ADD requirements.txt /tmp/
 ADD exportVersion /opt/bin/
 ADD https://github.com/arq5x/bedtools2/releases/download/v2.31.0/bedtools.static /opt/bin/bedtools
