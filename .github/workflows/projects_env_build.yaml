@@ -38,10 +38,11 @@ jobs:
         with :
           context: ./
           load: true
-          tags: app:test
+          tags: mytestapp:test
       - name: Test
         run: |
-          docker run --rm app:test exportVersion > PackagesVersion.md
+          docker run --rm mytestapp:test ls -lthrR /opt/ 
+          docker run --rm mytestapp:test exportVersion > PackagesVersion.md
           cat PackagesVersion.md
       - name: push to the remote
         run: |
@@ -61,4 +62,3 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
