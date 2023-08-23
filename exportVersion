@@ -3,16 +3,7 @@ set -e
 set -o pipefail
 
 
-rscript="
-library(devtools);
-library(dplyr);
-library(ggplot2);
-library(ggpubr);
-library(BiocManager);
-sessionInfo()
-"
 
-r_package_version=$(Rscript -e "$rscript")
 python_package_version=$(pip3 freeze)
 
 echo `date`
