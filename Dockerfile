@@ -1,4 +1,4 @@
-FROM btrspg/vscode-base:latest
+FROM btrspg/vscode-base:0.0.4
 
 ADD install_packages_R.R /tmp/
 ADD requirements.txt /tmp/
