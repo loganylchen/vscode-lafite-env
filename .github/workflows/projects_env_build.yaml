@@ -1,4 +1,4 @@
-name: image build for the project development container
+name: image build for the lafite development container
 
 on:
   push:
